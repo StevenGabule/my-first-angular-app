@@ -1,0 +1,21 @@
+<div class="game">
+  <h1>Sudoku</h1>
+  <div class="board">
+    <div *ngFor="let row of board; let i = index" class="row">
+      <div *ngFor="let cell of row; let j = index" class="cell" [class.highlighted]="isHighlighted(i, i)">
+        <input
+          type="text"
+          [(ngModel)]="board[i][j]"
+          (input)="onInput($event, i, j)"
+          maxLength="1"
+          [disabled]="isFixedCell(i, j)"
+        >
+      </div>
+    </div>
+  </div>
+  <div class="controls">
+    <button (click)="solve()">Solve</button>
+    <button (click)="reset()">Reset</button>
+  </div>
+  <p class="status">{{status}}</p>
+</div>

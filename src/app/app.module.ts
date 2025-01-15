@@ -7,13 +7,15 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import {FormsModule} from "@angular/forms";
 import { TicTacToeComponent } from './tic-tac-toe/tic-tac-toe.component';
+import { SudokuComponent } from './sudoku/sudoku.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserProfileComponent,
     CalculatorComponent,
-    TicTacToeComponent
+    TicTacToeComponent,
+    SudokuComponent
   ],
   imports: [
     BrowserModule,
