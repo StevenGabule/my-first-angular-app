@@ -8,6 +8,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import {FormsModule} from "@angular/forms";
 import { TicTacToeComponent } from './tic-tac-toe/tic-tac-toe.component';
 import { SudokuComponent } from './sudoku/sudoku.component';
+import { GameComponent } from './game/game.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { SudokuComponent } from './sudoku/sudoku.component';
     UserProfileComponent,
     CalculatorComponent,
     TicTacToeComponent,
-    SudokuComponent
+    SudokuComponent,
+    GameComponent
   ],
   imports: [
     BrowserModule,
